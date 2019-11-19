@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: Pod.ma
-//Last modified: Tue, Nov 19, 2019 01:23:06 PM
+//Last modified: Tue, Nov 19, 2019 01:24:33 PM
 //Codeset: 1252
 requires maya "2019";
 requires "mtoa" "3.1.2";
@@ -14,8 +14,8 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "6FF5C11D-4F85-AA19-9811-70A38569690B";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 5.1116022017336293 12.117339791852963 -29.108704358949236 ;
-	setAttr ".r" -type "double3" -18.938352748275097 528.19999999955314 0 ;
+	setAttr ".t" -type "double3" -2.1362740043967694 29.469484815467158 -15.002468019207932 ;
+	setAttr ".r" -type "double3" -61.538352748274121 544.59999999955107 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "788778D2-4D0A-AE87-E203-799943FA382B";
 	setAttr -k off ".v" no;
