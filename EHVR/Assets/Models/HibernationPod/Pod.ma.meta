@@ -10,6 +10,15 @@ ModelImporter:
     100008: //RootNode
     100010: PodDoor
     100012: transform1
+    100014: buttonHole1
+    100016: buttonHole2
+    100018: PodDoor 1
+    100020: PodDoor1
+    100022: pSphere1
+    100024: transform2
+    100026: transform3
+    100028: transform4
+    100030: transform5
     400000: button1
     400002: button2
     400004: Handle
@@ -17,22 +26,34 @@ ModelImporter:
     400008: //RootNode
     400010: PodDoor
     400012: transform1
+    400014: buttonHole1
+    400016: buttonHole2
+    400018: PodDoor 1
+    400020: PodDoor1
+    400022: pSphere1
+    400024: transform2
+    400026: transform3
+    400028: transform4
+    400030: transform5
     2100000: lambert1
     2300000: button1
     2300002: button2
     2300004: Handle
     2300006: Pod
     2300008: PodDoor
+    2300010: PodDoor1
     3300000: button1
     3300002: button2
     3300004: Handle
     3300006: Pod
     3300008: PodDoor
+    3300010: PodDoor1
     4300000: Pod
     4300002: PodDoor
     4300004: Handle
     4300006: button1
     4300008: button2
+    4300010: PodDoor1
   externalObjects: {}
   materials:
     importMaterials: 1

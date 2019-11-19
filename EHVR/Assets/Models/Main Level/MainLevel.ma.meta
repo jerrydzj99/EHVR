@@ -290,6 +290,25 @@ ModelImporter:
     100568: Table1
     100570: Table2
     100572: Table3
+    100574: Leg1
+    100576: Leg2
+    100578: Leg2 1
+    100580: Leg3
+    100582: Leg3 1
+    100584: Leg4
+    100586: Leg4 1
+    100588: Leg5
+    100590: Leg5 1
+    100592: Legs
+    100594: Legs 1
+    100596: MainRoom_Inner
+    100598: MainRoom_Outer
+    100600: ScientistHiddenRoom_Inner
+    100602: ScientistHiddenRoom_Outer
+    100604: ScientistRoom_Inner
+    100606: ScientistRoom_Outer
+    100608: Table_Top
+    100610: Table_top
     400000: Bacteria
     400002: BigTunnel
     400004: bottom
@@ -577,6 +596,25 @@ ModelImporter:
     400568: Table1
     400570: Table2
     400572: Table3
+    400574: Leg1
+    400576: Leg2
+    400578: Leg2 1
+    400580: Leg3
+    400582: Leg3 1
+    400584: Leg4
+    400586: Leg4 1
+    400588: Leg5
+    400590: Leg5 1
+    400592: Legs
+    400594: Legs 1
+    400596: MainRoom_Inner
+    400598: MainRoom_Outer
+    400600: ScientistHiddenRoom_Inner
+    400602: ScientistHiddenRoom_Outer
+    400604: ScientistRoom_Inner
+    400606: ScientistRoom_Outer
+    400608: Table_Top
+    400610: Table_top
     2000000: bottom
     2100000: lambert1
     2300000: Bacteria
@@ -845,6 +883,24 @@ ModelImporter:
     2300526: Screen1 1
     2300528: Screen2 1
     2300530: Screen3 1
+    2300532: Leg1
+    2300534: Leg2
+    2300536: Leg2 1
+    2300538: Leg3
+    2300540: Leg3 1
+    2300542: Leg4
+    2300544: Leg4 1
+    2300546: Leg5
+    2300548: Leg5 1
+    2300550: Legs 1
+    2300552: MainRoom_Inner
+    2300554: MainRoom_Outer
+    2300556: ScientistHiddenRoom_Inner
+    2300558: ScientistHiddenRoom_Outer
+    2300560: ScientistRoom_Inner
+    2300562: ScientistRoom_Outer
+    2300564: Table_Top
+    2300566: Table_top
     3300000: Bacteria
     3300002: BigTunnel
     3300004: Cupboard
@@ -1111,6 +1167,24 @@ ModelImporter:
     3300526: Screen1 1
     3300528: Screen2 1
     3300530: Screen3 1
+    3300532: Leg1
+    3300534: Leg2
+    3300536: Leg2 1
+    3300538: Leg3
+    3300540: Leg3 1
+    3300542: Leg4
+    3300544: Leg4 1
+    3300546: Leg5
+    3300548: Leg5 1
+    3300550: Legs 1
+    3300552: MainRoom_Inner
+    3300554: MainRoom_Outer
+    3300556: ScientistHiddenRoom_Inner
+    3300558: ScientistHiddenRoom_Outer
+    3300560: ScientistRoom_Inner
+    3300562: ScientistRoom_Outer
+    3300564: Table_Top
+    3300566: Table_top
     4300000: BigTunnel
     4300002: MainRoom
     4300004: Hologram
@@ -1377,6 +1451,24 @@ ModelImporter:
     4300526: pCube3
     4300528: pCube4
     4300530: Bacteria
+    4300532: MainRoom_Outer
+    4300534: MainRoom_Inner
+    4300536: Table_Top
+    4300538: Leg1
+    4300540: Leg2
+    4300542: Leg4
+    4300544: Leg3
+    4300546: Leg5
+    4300548: Legs
+    4300550: Leg2
+    4300552: Leg3
+    4300554: Leg4
+    4300556: Leg5
+    4300558: Table_top
+    4300560: ScientistRoom_Outer
+    4300562: ScientistRoom_Inner
+    4300564: ScientistHiddenRoom_Outer
+    4300566: ScientistHiddenRoom_Inner
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
