@@ -12,7 +12,8 @@ public class GP : MonoBehaviour
     private bool anchored;
     private Vector3 anchorPosition;
     private Vector3 handVelocity;
-    private bool vibrating;
+    private bool anchorVibrationInProgress;
+    private bool warningVibrationInProgress;
 
     private float timeOfAnchoring;
 
@@ -20,7 +21,8 @@ public class GP : MonoBehaviour
     void Start()
     {
         anchored = false;
-        vibrating = false;
+        anchorVibrationInProgress = false;
+        warningVibrationInProgress = false;
     }
 
     // Update is called once per frame
@@ -37,7 +39,16 @@ public class GP : MonoBehaviour
             Rigidbody rigidbody = player.GetComponent<Rigidbody>();
             rigidbody.velocity = - handVelocity;
 
-            if (Time.time - timeOfAnchoring >= 0.1f && vibrating)
+            if (Vector3.Magnitude(hand.transform.position - transform.position) > 0.1f && !warningVibrationInProgress)
+            {
+                StartWarningVibration();
+            }
+            else if (warningVibrationInProgress)
+            {
+                EndWarningVibration();
+            }
+
+            if (Time.time - timeOfAnchoring >= 0.1f && anchorVibrationInProgress)
             {
                 EndAnchorVibration();
             }
@@ -74,14 +85,26 @@ public class GP : MonoBehaviour
 
     private void StartAnchorVibration()
     {
-        vibrating = true;
+        anchorVibrationInProgress = true;
         timeOfAnchoring = Time.time;
         OVRInput.SetControllerVibration(0.5f, 1f, controller);
     }
 
     private void EndAnchorVibration()
     {
-        vibrating = false;
+        anchorVibrationInProgress = false;
+        OVRInput.SetControllerVibration(0, 0, controller);
+    }
+
+    private void StartWarningVibration()
+    {
+        warningVibrationInProgress = true;
+        OVRInput.SetControllerVibration(0.00005f, 1f, controller);
+    }
+
+    private void EndWarningVibration()
+    {
+        warningVibrationInProgress = false;
         OVRInput.SetControllerVibration(0, 0, controller);
     }
 }
