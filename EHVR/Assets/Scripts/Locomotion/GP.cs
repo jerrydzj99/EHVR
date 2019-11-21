@@ -12,11 +12,15 @@ public class GP : MonoBehaviour
     private bool anchored;
     private Vector3 anchorPosition;
     private Vector3 handVelocity;
+    private bool vibrating;
+
+    private float timeOfAnchoring;
 
     // Start is called before the first frame update
     void Start()
     {
         anchored = false;
+        vibrating = false;
     }
 
     // Update is called once per frame
@@ -32,6 +36,11 @@ public class GP : MonoBehaviour
             hand.transform.position = anchorPosition;
             Rigidbody rigidbody = player.GetComponent<Rigidbody>();
             rigidbody.velocity = - handVelocity;
+
+            if (Time.time - timeOfAnchoring >= 0.1f && vibrating)
+            {
+                EndAnchorVibration();
+            }
 
             if (gripState < 0.9f)
             {
@@ -54,10 +63,25 @@ public class GP : MonoBehaviour
     {
         anchored = true;
         anchorPosition = transform.position;
+        StartAnchorVibration();
     }
 
     private void Disanchor()
     {
         anchored = false;
+        EndAnchorVibration();
+    }
+
+    private void StartAnchorVibration()
+    {
+        vibrating = true;
+        timeOfAnchoring = Time.time;
+        OVRInput.SetControllerVibration(0.5f, 1f, controller);
+    }
+
+    private void EndAnchorVibration()
+    {
+        vibrating = false;
+        OVRInput.SetControllerVibration(0, 0, controller);
     }
 }
