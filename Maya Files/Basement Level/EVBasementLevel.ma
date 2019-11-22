@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: EVBasementLevel.ma
-//Last modified: Thu, Nov 21, 2019 12:17:19 PM
+//Last modified: Fri, Nov 22, 2019 12:33:28 PM
 //Codeset: UTF-8
 requires maya "2019";
 requires "mtoa" "3.1.2";
@@ -15,13 +15,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "BFD98C0F-8441-6DC3-3225-21A169F7B342";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 11.625812299996639 27.298449002165242 -24.615979838597752 ;
-	setAttr ".r" -type "double3" -37.538352317704138 3376.199999996486 0 ;
+	setAttr ".t" -type "double3" -11.833004159759303 15.916420916634271 4.7257630783946469 ;
+	setAttr ".r" -type "double3" -51.338352310348462 3532.199999996205 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "9317FC00-CB47-34DB-2841-B484BE7ADAFA";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 44.852554046624292;
+	setAttr ".coi" 19.418458495214054;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -2364,22 +2364,22 @@ createNode mesh -n "CeilingShape1" -p "Ceiling1";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "628C3A43-9C49-4721-F07B-9CBD9FB8ECDC";
+	rename -uid "44538DEC-2B48-814B-A272-3B84A6BAA870";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "EA34B9FA-164A-E53D-5FEB-D995C76A219E";
+	rename -uid "045F585E-E246-021A-BDAB-FFACCA90AFF2";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "F602ABA9-0D4A-BE1C-091C-D2A9FF0CA4D8";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "52C99B40-CA42-D93F-13DE-7499D00A0D68";
+	rename -uid "2C6574E1-644C-C8BF-95AE-BDA5AA09C6A3";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "FD38BCB3-1845-120D-8F42-BAA43C191C37";
 	setAttr ".g" yes;
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "A84BCADD-0E49-331F-22B6-029484EF2B7F";
+	rename -uid "EDBA7103-284F-2872-6E9D-14859E16BA4B";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "28D82A83-6845-5375-D8B4-EFA50CBAA515";
+	rename -uid "3C2C3768-434A-6165-6020-20A5E5BF0B26";
 createNode polyCube -n "polyCube1";
 	rename -uid "A7D79122-4D45-3414-E96C-CB9E29C1CBD2";
 	setAttr ".cuv" 1;
@@ -2691,8 +2691,6 @@ select -ne :defaultResolution;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
-select -ne :ikSystem;
-	setAttr -s 4 ".sol";
 connectAttr "polyCube1.out" "DividerShape4.i";
 connectAttr "groupId1.id" "DoorwayShape4.iog.og[0].gid";
 connectAttr ":initialShadingGroup.mwc" "DoorwayShape4.iog.og[0].gco";
