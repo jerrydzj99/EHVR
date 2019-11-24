@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: Master_Model.ma
-//Last modified: Sat, Nov 23, 2019 08:45:07 PM
+//Last modified: Sat, Nov 23, 2019 08:26:32 PM
 //Codeset: UTF-8
 requires maya "2019";
 requires "mtoa" "3.1.2";
@@ -17,13 +17,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "39F83826-2847-4A59-0F93-EAB9055AE16D";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 11.581535528637655 15.770871549343864 14.904035782246568 ;
-	setAttr ".r" -type "double3" -36.338352738183502 746.60000000024627 0 ;
+	setAttr ".t" -type "double3" -0.56637849676129548 16.988171017635683 5.5668997777938936 ;
+	setAttr ".r" -type "double3" -52.538352740571931 663.00000000008731 -5.8397479375827376e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "96F8F111-E24C-325A-187F-BBB6D17C140F";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 19.744982362637302;
+	setAttr ".coi" 20.157476275766893;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -49,13 +49,13 @@ createNode camera -s -n "topShape" -p "top";
 createNode transform -s -n "front";
 	rename -uid "5A998212-BA4E-D952-A7D9-9A949A1115FA";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 12.555753574677029 0.24861174098925587 1000.1031718194538 ;
+	setAttr ".t" -type "double3" 14.000558692740199 1.5352191940416793 1000.1031718194538 ;
 createNode camera -s -n "frontShape" -p "front";
 	rename -uid "59D90B8E-3541-8886-341C-3FACD5654C79";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".coi" 999.91969971547826;
-	setAttr ".ow" 10.360507950249978;
+	setAttr ".ow" 0.0171699786292983;
 	setAttr ".imn" -type "string" "front";
 	setAttr ".den" -type "string" "front_depth";
 	setAttr ".man" -type "string" "front_mask";
@@ -65,14 +65,14 @@ createNode camera -s -n "frontShape" -p "front";
 createNode transform -s -n "side";
 	rename -uid "147F4222-AF4D-8C8E-6836-9A9C25198A9C";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 1000.1020565989571 3.0364835063604687 -2.6381673946644062 ;
+	setAttr ".t" -type "double3" 1000.1020565989571 1.7026567662812919 -1.9701630345043508 ;
 	setAttr ".r" -type "double3" 0 89.999999999999986 0 ;
 createNode camera -s -n "sideShape" -p "side";
 	rename -uid "2AD71698-D14C-5DBF-2F2D-DA8ED1CA8852";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".coi" 991.88601114305527;
-	setAttr ".ow" 20.900680146981017;
+	setAttr ".ow" 4.4141389897446679;
 	setAttr ".imn" -type "string" "side";
 	setAttr ".den" -type "string" "side_depth";
 	setAttr ".man" -type "string" "side_mask";
@@ -1610,6 +1610,7 @@ createNode mesh -n "EVBasementLevel:CeilingShape" -p "EVBasementLevel:Ceiling";
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "EVBasementLevel:Outerwall11" -p "Basement_Level";
 	rename -uid "8F554B30-B74F-5491-87C9-0FA81FCB547B";
+	setAttr ".v" no;
 	setAttr ".t" -type "double3" -0.27286023854209651 -2.2204460492503131e-15 0.059740925755354723 ;
 	setAttr ".r" -type "double3" 0 90 0 ;
 	setAttr ".s" -type "double3" 8.0505745918751952 3 0.2 ;
@@ -1618,7 +1619,6 @@ createNode mesh -n "EVBasementLevel:OuterwallShape11" -p "EVBasementLevel:Outerw
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 1.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 14 ".uvst[0].uvsp[0:13]" -type "float2" 0 0 1 0 0 1 1 1 0
 		 2 1 2 0 3 1 3 0 4 1 4 2 0 2 1 -1 0 -1 1;
@@ -1626,9 +1626,6 @@ createNode mesh -n "EVBasementLevel:OuterwallShape11" -p "EVBasementLevel:Outerw
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 4 ".pt[2:5]" -type "float3"  -4.4408921e-16 -0.18183041 
-		-1.7763568e-14 -4.4408921e-16 -0.18183041 -1.7763568e-14 -4.4408921e-16 -0.18183041 
-		-1.7763568e-14 -4.4408921e-16 -0.18183041 -1.7763568e-14;
 	setAttr -s 8 ".vt[0:7]"  -0.5 -0.5 0.5 0.5 -0.5 0.5 -0.5 0.5 0.5 0.5 0.5 0.5
 		 -0.5 0.5 -0.5 0.5 0.5 -0.5 -0.5 -0.5 -0.5 0.5 -0.5 -0.5;
 	setAttr -s 12 ".ed[0:11]"  0 1 0 2 3 0 4 5 0 6 7 0 0 2 0 1 3 0 2 4 0
@@ -1668,9 +1665,6 @@ createNode mesh -n "EVBasementLevel:OuterwallShape12" -p "EVBasementLevel:Outerw
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 4 ".pt[2:5]" -type "float3"  9.4368957e-16 -0.18183041 
-		2.0428104e-13 -1.1712853e-14 -0.18183041 2.0428104e-13 9.4368957e-16 -0.18183041 
-		2.0428104e-13 -1.1712853e-14 -0.18183041 2.0428104e-13;
 	setAttr -s 8 ".vt[0:7]"  -0.5 -0.5 0.5 0.5 -0.5 0.5 -0.5 0.5 0.5 0.5 0.5 0.5
 		 -0.5 0.5 -0.5 0.5 0.5 -0.5 -0.5 -0.5 -0.5 0.5 -0.5 -0.5;
 	setAttr -s 12 ".ed[0:11]"  0 1 0 2 3 0 4 5 0 6 7 0 0 2 0 1 3 0 2 4 0
@@ -1710,9 +1704,6 @@ createNode mesh -n "EVBasementLevel:OuterwallShape13" -p "EVBasementLevel:Outerw
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 4 ".pt[2:5]" -type "float3"  -5.3290705e-15 -0.18183041 
-		-4.3298698e-14 -5.3290705e-15 -0.18183041 -4.3298698e-14 -5.3290705e-15 -0.18183041 
-		-4.3298698e-14 -5.3290705e-15 -0.18183041 -4.3298698e-14;
 	setAttr -s 8 ".vt[0:7]"  -0.5 -0.5 0.5 0.5 -0.5 0.5 -0.5 0.5 0.5 0.5 0.5 0.5
 		 -0.5 0.5 -0.5 0.5 0.5 -0.5 -0.5 -0.5 -0.5 0.5 -0.5 -0.5;
 	setAttr -s 12 ".ed[0:11]"  0 1 0 2 3 0 4 5 0 6 7 0 0 2 0 1 3 0 2 4 0
@@ -1752,9 +1743,6 @@ createNode mesh -n "EVBasementLevel:OuterwallShape14" -p "EVBasementLevel:Outerw
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 4 ".pt[2:5]" -type "float3"  7.2719608e-15 -0.18183041 
-		-1.7941204e-13 -5.3845817e-15 -0.18183041 -1.7941204e-13 7.2719608e-15 -0.18183041 
-		-1.7941204e-13 -5.3845817e-15 -0.18183041 -1.7941204e-13;
 	setAttr -s 8 ".vt[0:7]"  -0.5 -0.5 0.5 0.5 -0.5 0.5 -0.5 0.5 0.5 0.5 0.5 0.5
 		 -0.5 0.5 -0.5 0.5 0.5 -0.5 -0.5 -0.5 -0.5 0.5 -0.5 -0.5;
 	setAttr -s 12 ".ed[0:11]"  0 1 0 2 3 0 4 5 0 6 7 0 0 2 0 1 3 0 2 4 0
@@ -1794,9 +1782,6 @@ createNode mesh -n "EVBasementLevel:OuterwallShape15" -p "EVBasementLevel:Outerw
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 4 ".pt[2:5]" -type "float3"  -7.1054274e-15 -0.18183041 
-		-6.8833828e-14 -7.1054274e-15 -0.18183041 -6.8833828e-14 -7.1054274e-15 -0.18183041 
-		-6.8833828e-14 -7.1054274e-15 -0.18183041 -6.8833828e-14;
 	setAttr -s 8 ".vt[0:7]"  -0.5 -0.5 0.5 0.5 -0.5 0.5 -0.5 0.5 0.5 0.5 0.5 0.5
 		 -0.5 0.5 -0.5 0.5 0.5 -0.5 -0.5 -0.5 -0.5 0.5 -0.5 -0.5;
 	setAttr -s 12 ".ed[0:11]"  0 1 0 2 3 0 4 5 0 6 7 0 0 2 0 1 3 0 2 4 0
@@ -1836,9 +1821,6 @@ createNode mesh -n "EVBasementLevel:OuterwallShape16" -p "EVBasementLevel:Outerw
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 4 ".pt[2:5]" -type "float3"  -0.00017927166 -0.18182822 
-		0.0076102177 -0.00017927166 -0.18182822 0.0076102177 -0.00017927166 -0.18182822 0.0076102177 
-		-0.00017927166 -0.18182822 0.0076102177;
 	setAttr -s 8 ".vt[0:7]"  -0.5 -0.5 0.5 0.5 -0.5 0.5 -0.5 0.5 0.5 0.5 0.5 0.5
 		 -0.5 0.5 -0.5 0.5 0.5 -0.5 -0.5 -0.5 -0.5 0.5 -0.5 -0.5;
 	setAttr -s 12 ".ed[0:11]"  0 1 0 2 3 0 4 5 0 6 7 0 0 2 0 1 3 0 2 4 0
@@ -1878,9 +1860,6 @@ createNode mesh -n "EVBasementLevel:OuterwallShape17" -p "EVBasementLevel:Outerw
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 4 ".pt[2:5]" -type "float3"  -0.00017927124 -0.18182927 
-		0.0015568129 -0.00017927124 -0.18182927 0.0015568129 -0.00017927124 -0.18182927 0.0015568129 
-		-0.00017927124 -0.18182927 0.0015568129;
 	setAttr -s 8 ".vt[0:7]"  -0.5 -0.5 0.5 0.5 -0.5 0.5 -0.5 0.5 0.5 0.5 0.5 0.5
 		 -0.5 0.5 -0.5 0.5 0.5 -0.5 -0.5 -0.5 -0.5 0.5 -0.5 -0.5;
 	setAttr -s 12 ".ed[0:11]"  0 1 0 2 3 0 4 5 0 6 7 0 0 2 0 1 3 0 2 4 0
@@ -1920,9 +1899,6 @@ createNode mesh -n "EVBasementLevel:OuterwallShape18" -p "EVBasementLevel:Outerw
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 4 ".pt[2:5]" -type "float3"  -3.1086245e-15 -0.18183041 
-		-1.4210855e-14 -3.1086245e-15 -0.18183041 -1.4210855e-14 -3.1086245e-15 -0.18183041 
-		-1.4210855e-14 -3.1086245e-15 -0.18183041 -1.4210855e-14;
 	setAttr -s 8 ".vt[0:7]"  -0.5 -0.5 0.5 0.5 -0.5 0.5 -0.5 0.5 0.5 0.5 0.5 0.5
 		 -0.5 0.5 -0.5 0.5 0.5 -0.5 -0.5 -0.5 -0.5 0.5 -0.5 -0.5;
 	setAttr -s 12 ".ed[0:11]"  0 1 0 2 3 0 4 5 0 6 7 0 0 2 0 1 3 0 2 4 0
@@ -1962,9 +1938,6 @@ createNode mesh -n "EVBasementLevel:OuterwallShape19" -p "EVBasementLevel:Outerw
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 4 ".pt[2:5]" -type "float3"  2.1982416e-14 -0.18183041 
-		-1.4210855e-14 2.1982416e-14 -0.18183041 -1.4210855e-14 2.1982416e-14 -0.18183041 
-		-1.4210855e-14 2.1982416e-14 -0.18183041 -1.4210855e-14;
 	setAttr -s 8 ".vt[0:7]"  -0.5 -0.5 0.5 0.5 -0.5 0.5 -0.5 0.5 0.5 0.5 0.5 0.5
 		 -0.5 0.5 -0.5 0.5 0.5 -0.5 -0.5 -0.5 -0.5 0.5 -0.5 -0.5;
 	setAttr -s 12 ".ed[0:11]"  0 1 0 2 3 0 4 5 0 6 7 0 0 2 0 1 3 0 2 4 0
@@ -2008,11 +1981,9 @@ createNode mesh -n "EVBasementLevel:Doorway9Shape" -p "EVBasementLevel:Doorway9"
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 12 ".pt[4:15]" -type "float3"  -3.5527137e-15 -0.54549116 
-		3.5527137e-15 -3.5527137e-15 -0.54549116 3.5527137e-15 0 -0.36465755 0 0 -0.36465755 
+	setAttr -s 8 ".pt[6:13]" -type "float3"  0 -0.36465755 0 0 -0.36465755 
 		0 0 -0.36465755 0 0 -0.36465755 0 0 -0.36465755 0 0 -0.36465755 0 0 -0.36465755 0 
-		0 -0.36465755 0 -3.5527137e-15 -0.54549116 3.5527137e-15 -3.5527137e-15 -0.54549116 
-		3.5527137e-15;
+		0 -0.36465755 0;
 	setAttr -s 16 ".vt[0:15]"  2.86988473 -1.49840784 0.84654975 2.86801863 -1.50061226 -0.51713383
 		 3.068016291 -1.50155497 -0.51740599 3.069882154 -1.49935055 0.84627759 2.8821528 1.49935055 -0.5220027
 		 3.082150221 1.49840784 -0.52227485 2.87258911 -0.625 -0.19152832 2.87360954 -0.625 0.55847168
@@ -2068,9 +2039,6 @@ createNode mesh -n "EVBasementLevel:OuterwallShape20" -p "EVBasementLevel:Outerw
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 4 ".pt[2:5]" -type "float3"  -3.5527137e-15 -0.18183041 
-		1.7763568e-14 -3.5527137e-15 -0.18183041 1.7763568e-14 -3.5527137e-15 -0.18183041 
-		1.7763568e-14 -3.5527137e-15 -0.18183041 1.7763568e-14;
 	setAttr -s 8 ".vt[0:7]"  -0.5 -0.5 0.5 0.5 -0.5 0.5 -0.5 0.5 0.5 0.5 0.5 0.5
 		 -0.5 0.5 -0.5 0.5 0.5 -0.5 -0.5 -0.5 -0.5 0.5 -0.5 -0.5;
 	setAttr -s 12 ".ed[0:11]"  0 1 0 2 3 0 4 5 0 6 7 0 0 2 0 1 3 0 2 4 0
@@ -2109,9 +2077,6 @@ createNode mesh -n "EVBasementLevel:OuterwallShape21" -p "EVBasementLevel:Outerw
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 4 ".pt[2:5]" -type "float3"  -3.5527137e-15 -0.18183041 
-		1.7763568e-14 -3.5527137e-15 -0.18183041 1.7763568e-14 -3.5527137e-15 -0.18183041 
-		1.7763568e-14 -3.5527137e-15 -0.18183041 1.7763568e-14;
 	setAttr -s 8 ".vt[0:7]"  -0.5 -0.5 0.5 0.5 -0.5 0.5 -0.5 0.5 0.5 0.5 0.5 0.5
 		 -0.5 0.5 -0.5 0.5 0.5 -0.5 -0.5 -0.5 -0.5 0.5 -0.5 -0.5;
 	setAttr -s 12 ".ed[0:11]"  0 1 0 2 3 0 4 5 0 6 7 0 0 2 0 1 3 0 2 4 0
@@ -2226,7 +2191,7 @@ createNode mesh -n "EVBasementLevel:FloorShape1" -p "EVBasementLevel:Floor1";
 createNode transform -n "EVBasementLevel:Ceiling1" -p "Basement_Level";
 	rename -uid "080B58AB-814A-48A9-A89E-10B1BA9D3B24";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 6.9998425547162828 0.96403195678665332 -0.16748912749801409 ;
+	setAttr ".t" -type "double3" 6.9998425547162899 1.430328352757273 -0.1674891274980137 ;
 	setAttr ".s" -type "double3" 14.770835995754283 0.2 10.907536462571812 ;
 createNode mesh -n "EVBasementLevel:CeilingShape1" -p "EVBasementLevel:Ceiling1";
 	rename -uid "B21B56EE-6A40-3720-9244-6D918988FDF6";
@@ -2330,8 +2295,7 @@ createNode mesh -n "EVBasementLevel:OuterwallShape22" -p "EVBasementLevel:Outerw
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 16 ".pt[0:15]" -type "float3"  0.036175519 0 0 -0.038056012 
-		0 0 0.036175519 -0.18183041 -1.4210855e-14 -0.038056012 -0.18183041 -1.4210855e-14 
-		0.036175519 -0.18183041 -1.4210855e-14 -0.038056012 -0.18183041 -1.4210855e-14 0.036175519 
+		0 0 0.036175519 0 0 -0.038056012 0 0 0.036175519 0 0 -0.038056012 0 0 0.036175519 
 		0 0 -0.038056012 0 0 -0.26458365 -0.11993007 1.6653345e-15 -0.26458365 -0.11993007 
 		1.6653345e-15 -0.26458365 -0.11993007 1.6653345e-15 -0.26458365 -0.11993007 1.6653345e-15 
 		-0.26458365 -0.11993007 1.6653345e-15 -0.26458365 -0.11993007 1.6653345e-15 -0.26458365 
@@ -2378,16 +2342,16 @@ createNode transform -n "EVBasementLevel:Outerwall23" -p "Basement_Level";
 	setAttr ".t" -type "double3" 6.2901403484799205 -1.7763568394002505e-15 -0.65808968728624484 ;
 	setAttr ".r" -type "double3" 0 -195.045 0 ;
 	setAttr ".s" -type "double3" 6.0486966305447174 3 0.2 ;
-	setAttr ".rp" -type "double3" -1.5351699591660759 -0.36539939045906067 0.00049369335174565974 ;
-	setAttr ".rpt" -type "double3" 3.0178459016719001 0 0.39752527199246829 ;
-	setAttr ".sp" -type "double3" -0.25380177795886993 -0.12179979681968689 0.0024684667587280273 ;
-	setAttr ".spt" -type "double3" -1.281368181207206 -0.24359959363937378 -0.0019747734069823675 ;
+	setAttr ".rp" -type "double3" -1.6462924631094107 8.9406967163085938e-08 -3.8146972656249409e-07 ;
+	setAttr ".rpt" -type "double3" 3.2361536296576232 0 0.42734139891724382 ;
+	setAttr ".sp" -type "double3" -0.27217309176921844 2.9802322387695312e-08 -1.9073486328125e-06 ;
+	setAttr ".spt" -type "double3" -1.3741193713401922 5.9604644775390625e-08 1.525878906250006e-06 ;
 createNode mesh -n "EVBasementLevel:OuterwallShape23" -p "EVBasementLevel:Outerwall23";
 	rename -uid "6819C5CA-A840-A06A-D4FC-06BE91BE8B94";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 1 ;
+	setAttr ".pv" -type "double2" 0 2 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 38 ".uvst[0].uvsp[0:37]" -type "float2" 0 0 1 0 0 1 1 1 0
 		 2 1 2 0 3 1 3 0 4 1 4 2 0 2 1 -1 0 -1 1 0 2 1 2 1 3 0 3 0 0 1 0 1 1 0 1 0 0 0.41666511
@@ -2399,13 +2363,13 @@ createNode mesh -n "EVBasementLevel:OuterwallShape23" -p "EVBasementLevel:Outerw
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 16 ".pt[0:15]" -type "float3"  0.054547019 5.5511151e-17 
-		0.002470562 -0.14653422 -5.5511151e-17 4.7683716e-07 0.054547019 -0.18183041 0.002470562 
-		-0.14653422 -0.18183041 4.7683523e-07 0.054547019 -0.18183041 0.002470562 -0.14653422 
-		-0.18183041 4.7683523e-07 0.054547019 5.5511151e-17 0.002470562 -0.14653422 -5.5511151e-17 
-		4.7683716e-07 -0.29274791 -0.046599805 0.0024695396 -0.24757148 -0.046599805 0.0024695396 
-		-0.24757148 -0.19841084 0.0024695396 -0.29274791 -0.19841084 0.0024695396 -0.29274791 
-		-0.19841088 0.0024703741 -0.24757148 -0.19841088 0.0024703741 -0.24757148 -0.046599805 
-		0.0024703741 -0.29274791 -0.046599805 0.0024703741;
+		0.002470562 -0.14653422 -5.5511151e-17 4.7683716e-07 0.054547019 0 0.002470562 -0.14653422 
+		1.110223e-16 4.7683716e-07 0.054547019 0 0.002470562 -0.14653422 1.110223e-16 4.7683716e-07 
+		0.054547019 5.5511151e-17 0.002470562 -0.14653422 -5.5511151e-17 4.7683716e-07 -0.27518386 
+		-0.024444513 0.002470562 -0.21724062 -0.024444513 0.002470562 -0.21724062 -0.21915482 
+		0.002470562 -0.27518386 -0.21915482 0.002470562 -0.27518386 -0.21915482 0.002470562 
+		-0.21724062 -0.21915482 0.002470562 -0.21724062 -0.024444513 0.002470562 -0.27518386 
+		-0.024444513 0.002470562;
 	setAttr -s 16 ".vt[0:15]"  -0.49999988 -0.5 0.5 0.49999994 -0.5 0.5
 		 -0.49999988 0.50000006 0.5 0.49999994 0.50000006 0.5 -0.49999988 0.50000006 -0.50000381
 		 0.49999994 0.50000006 -0.50000381 -0.49999988 -0.5 -0.50000381 0.49999994 -0.5 -0.50000381
@@ -2504,7 +2468,7 @@ createNode mesh -n "OuterwallShape23" -p "Outerwall23";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 1.5 ;
+	setAttr ".pv" -type "double2" -0.5 2 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 14 ".uvst[0].uvsp[0:13]" -type "float2" 0 0 1 0 0 1 1 1 0
 		 2 1 2 0 3 1 3 0 4 1 4 2 0 2 1 -1 0 -1 1;
@@ -2513,9 +2477,9 @@ createNode mesh -n "OuterwallShape23" -p "Outerwall23";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 8 ".pt[0:7]" -type "float3"  0.10315922 0 -2.8421709e-14 
-		-0.12622224 0 -8.1046281e-15 0.10315922 -0.18183041 -4.2632564e-14 -0.12622224 -0.18183041 
-		-2.2315483e-14 0.10315922 -0.18183041 -4.2632564e-14 -0.12622224 -0.18183041 -2.1538327e-14 
-		0.10315922 0 -2.8421709e-14 -0.12622224 0 -7.327472e-15;
+		-0.12622224 0 -8.1046281e-15 0.10315922 0 -2.8421709e-14 -0.12622224 0 -8.1046281e-15 
+		0.10315922 0 -2.8421709e-14 -0.12622224 0 -7.327472e-15 0.10315922 0 -2.8421709e-14 
+		-0.12622224 0 -7.327472e-15;
 	setAttr -s 8 ".vt[0:7]"  -0.46382436 -0.5 0.5 0.2436257 -0.5 0.5 -0.46382436 0.50000006 0.5
 		 0.2436257 0.50000006 0.5 -0.46382436 0.50000006 -0.50000381 0.2436257 0.50000006 -0.50000381
 		 -0.46382436 -0.5 -0.50000381 0.2436257 -0.5 -0.50000381;
@@ -2589,7 +2553,7 @@ createNode mesh -n "OuterwallShape24" -p "Outerwall24";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" -0.5 1.5 ;
+	setAttr ".pv" -type "double2" 1.5 2 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 14 ".uvst[0].uvsp[0:13]" -type "float2" 0 0 1 0 0 1 1 1 0
 		 2 1 2 0 3 1 3 0 4 1 4 2 0 2 1 -1 0 -1 1;
@@ -2598,9 +2562,9 @@ createNode mesh -n "OuterwallShape24" -p "Outerwall24";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 8 ".pt[0:7]" -type "float3"  0.044608306 0 -9.6478381e-14 
-		-0.19851598 1.110223e-16 -0.010457086 0.044608306 -0.18183041 -4.8516746e-13 -0.19851598 
-		-0.18183041 -0.010457086 0.044608306 -0.18183041 -5.166978e-13 -0.19851598 -0.18183041 
-		-0.010457086 0.044608306 0 -1.0247359e-13 -0.19851598 1.110223e-16 -0.010457086;
+		-0.19851598 1.110223e-16 -0.010457086 0.044608306 0 -9.6478381e-14 -0.19851598 0 
+		-0.010457086 0.044608306 0 -1.0247359e-13 -0.19851598 0 -0.010457086 0.044608306 
+		0 -1.0247359e-13 -0.19851598 1.110223e-16 -0.010457086;
 	setAttr -s 8 ".vt[0:7]"  -0.46382436 -0.5 0.5 0.2436257 -0.5 0.5 -0.46382436 0.50000006 0.5
 		 0.2436257 0.50000006 0.5 -0.46382436 0.50000006 -0.50000381 0.2436257 0.50000006 -0.50000381
 		 -0.46382436 -0.5 -0.50000381 0.2436257 -0.5 -0.50000381;
@@ -29090,8 +29054,8 @@ createNode mesh -n "pCubeShape4" -p "pCube4";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 8 ".pt[0:7]" -type "float3"  0.40609813 -2.220446e-16 
-		0.4515509 0.05792857 -1.110223e-16 0.45456308 0.40609813 2.4170814 0.4515509 0.05792857 
-		2.4170814 0.45456308 0.40630785 2.4170814 -0.019635163 0.054789525 2.4170814 -0.026037114 
+		0.4515509 0.05792857 -1.110223e-16 0.45456308 0.40609813 2.0168877 0.4515509 0.05792857 
+		2.0168877 0.45456308 0.40630785 2.0168877 -0.019635163 0.054789525 2.0168877 -0.026037114 
 		0.40630785 -8.8817842e-16 -0.019635163 0.054789525 -3.3306691e-16 -0.026037114;
 	setAttr -s 8 ".vt[0:7]"  -0.5 -0.5 0.5 0.5 -0.5 0.5 -0.5 0.5 0.5 0.5 0.5 0.5
 		 -0.5 0.5 -0.5 0.5 0.5 -0.5 -0.5 -0.5 -0.5 0.5 -0.5 -0.5;

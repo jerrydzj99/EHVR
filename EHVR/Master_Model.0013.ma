@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
-//Name: Master_Model.ma
-//Last modified: Sat, Nov 23, 2019 08:45:07 PM
+//Name: Master_Model.0013.ma
+//Last modified: Sat, Nov 23, 2019 08:36:54 PM
 //Codeset: UTF-8
 requires maya "2019";
 requires "mtoa" "3.1.2";
@@ -8,6 +8,7 @@ requires -nodeType "rmanDisplayChannel" -nodeType "d_openexr" -nodeType "rmanGlo
 		 -nodeType "PxrPathTracer" -nodeType "rmanDisplay" "RenderMan_for_Maya.py" "22.6 @ 1987751";
 requires "mtoa" "3.1.2";
 currentUnit -l centimeter -a degree -t film;
+fileInfo "exportedFrom" "/Users/jerryding/Desktop/EHVR/Maya Files/Master Model/Master_Model.ma";
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2019";
 fileInfo "version" "2019";
@@ -17,13 +18,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "39F83826-2847-4A59-0F93-EAB9055AE16D";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 11.581535528637655 15.770871549343864 14.904035782246568 ;
-	setAttr ".r" -type "double3" -36.338352738183502 746.60000000024627 0 ;
+	setAttr ".t" -type "double3" 8.538384035121183 8.4585684820933693 8.3313001232187389 ;
+	setAttr ".r" -type "double3" -33.338352740642577 1059.0000000003508 -8.5170880600761411e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "96F8F111-E24C-325A-187F-BBB6D17C140F";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 19.744982362637302;
+	setAttr ".coi" 13.530503371267351;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -55,7 +56,7 @@ createNode camera -s -n "frontShape" -p "front";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".coi" 999.91969971547826;
-	setAttr ".ow" 10.360507950249978;
+	setAttr ".ow" 7.4214001819822331;
 	setAttr ".imn" -type "string" "front";
 	setAttr ".den" -type "string" "front_depth";
 	setAttr ".man" -type "string" "front_mask";
@@ -2378,16 +2379,16 @@ createNode transform -n "EVBasementLevel:Outerwall23" -p "Basement_Level";
 	setAttr ".t" -type "double3" 6.2901403484799205 -1.7763568394002505e-15 -0.65808968728624484 ;
 	setAttr ".r" -type "double3" 0 -195.045 0 ;
 	setAttr ".s" -type "double3" 6.0486966305447174 3 0.2 ;
-	setAttr ".rp" -type "double3" -1.5351699591660759 -0.36539939045906067 0.00049369335174565974 ;
-	setAttr ".rpt" -type "double3" 3.0178459016719001 0 0.39752527199246829 ;
-	setAttr ".sp" -type "double3" -0.25380177795886993 -0.12179979681968689 0.0024684667587280273 ;
-	setAttr ".spt" -type "double3" -1.281368181207206 -0.24359959363937378 -0.0019747734069823675 ;
+	setAttr ".rp" -type "double3" -1.6462924631094107 8.9406967163085938e-08 -3.8146972656249409e-07 ;
+	setAttr ".rpt" -type "double3" 3.2361536296576232 0 0.42734139891724382 ;
+	setAttr ".sp" -type "double3" -0.27217309176921844 2.9802322387695312e-08 -1.9073486328125e-06 ;
+	setAttr ".spt" -type "double3" -1.3741193713401922 5.9604644775390625e-08 1.525878906250006e-06 ;
 createNode mesh -n "EVBasementLevel:OuterwallShape23" -p "EVBasementLevel:Outerwall23";
 	rename -uid "6819C5CA-A840-A06A-D4FC-06BE91BE8B94";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 1 ;
+	setAttr ".pv" -type "double2" 0.5 1.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 38 ".uvst[0].uvsp[0:37]" -type "float2" 0 0 1 0 0 1 1 1 0
 		 2 1 2 0 3 1 3 0 4 1 4 2 0 2 1 -1 0 -1 1 0 2 1 2 1 3 0 3 0 0 1 0 1 1 0 1 0 0 0.41666511
@@ -2402,10 +2403,10 @@ createNode mesh -n "EVBasementLevel:OuterwallShape23" -p "EVBasementLevel:Outerw
 		0.002470562 -0.14653422 -5.5511151e-17 4.7683716e-07 0.054547019 -0.18183041 0.002470562 
 		-0.14653422 -0.18183041 4.7683523e-07 0.054547019 -0.18183041 0.002470562 -0.14653422 
 		-0.18183041 4.7683523e-07 0.054547019 5.5511151e-17 0.002470562 -0.14653422 -5.5511151e-17 
-		4.7683716e-07 -0.29274791 -0.046599805 0.0024695396 -0.24757148 -0.046599805 0.0024695396 
-		-0.24757148 -0.19841084 0.0024695396 -0.29274791 -0.19841084 0.0024695396 -0.29274791 
-		-0.19841088 0.0024703741 -0.24757148 -0.19841088 0.0024703741 -0.24757148 -0.046599805 
-		0.0024703741 -0.29274791 -0.046599805 0.0024703741;
+		4.7683716e-07 -0.27518386 -0.024444513 0.002470562 -0.21724062 -0.024444513 0.002470562 
+		-0.21724062 -0.21915482 0.002470562 -0.27518386 -0.21915482 0.002470562 -0.27518386 
+		-0.21915482 0.002470562 -0.21724062 -0.21915482 0.002470562 -0.21724062 -0.024444513 
+		0.002470562 -0.27518386 -0.024444513 0.002470562;
 	setAttr -s 16 ".vt[0:15]"  -0.49999988 -0.5 0.5 0.49999994 -0.5 0.5
 		 -0.49999988 0.50000006 0.5 0.49999994 0.50000006 0.5 -0.49999988 0.50000006 -0.50000381
 		 0.49999994 0.50000006 -0.50000381 -0.49999988 -0.5 -0.50000381 0.49999994 -0.5 -0.50000381
@@ -31724,4 +31725,4 @@ connectAttr "Protractor:groupId1.msg" ":initialShadingGroup.gn" -na;
 connectAttr "Protractor:groupId2.msg" ":initialShadingGroup.gn" -na;
 connectAttr "Protractor:groupId3.msg" ":initialShadingGroup.gn" -na;
 connectAttr "Protractor:groupId4.msg" ":initialShadingGroup.gn" -na;
-// End of Master_Model.ma
+// End of Master_Model.0013.ma
