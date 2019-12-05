@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: Master_Model.ma
-//Last modified: Thu, Dec 05, 2019 02:09:37 PM
+//Last modified: Thu, Dec 05, 2019 02:09:34 PM
 //Codeset: UTF-8
 requires maya "2019";
 requires "mtoa" "3.1.2";
@@ -738,6 +738,7 @@ createNode mesh -n "FloorShape" -p "Floor";
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "Ceiling" -p "Basement_Level";
 	rename -uid "080B58AB-814A-48A9-A89E-10B1BA9D3B24";
+	setAttr ".v" no;
 	setAttr ".t" -type "double3" 6.9998425547162828 0.96403195678665332 -0.16748912749801409 ;
 	setAttr ".s" -type "double3" 14.770835995754283 0.2 10.907536462571812 ;
 createNode mesh -n "CeilingShape" -p "Ceiling";

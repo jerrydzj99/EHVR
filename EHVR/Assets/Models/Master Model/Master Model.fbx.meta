@@ -1,0 +1,360 @@
+fileFormatVersion: 2
+guid: 1f939d156c9954fa787ca1a73726dec7
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Ceiling
+    100002: Computing_Unit
+    100004: Computing_Unit1
+    100006: Computing_Unit2
+    100008: Computing_Unit3
+    100010: Computing_Unit4
+    100012: Computing_Unit5
+    100014: Computing_Unit6
+    100016: Computing_Unit7
+    100018: Computing_Unit_Set1
+    100020: Computing_Unit_Set2
+    100022: Core
+    100024: Core 1
+    100026: Core 2
+    100028: Core 3
+    100030: Core 4
+    100032: Core 5
+    100034: Core 6
+    100036: Floor
+    100038: Glove_Holder
+    100040: glove_holder_bad:pCube1
+    100042: glove_holder_bad:pCube2
+    100044: glove_holder_bad:pCube3
+    100046: glove_holder_bad:pCube4
+    100048: glove_holder_bad:pCube5
+    100050: Hibernation_Pod
+    100052: Innerwall1
+    100054: Innerwall2
+    100056: Innerwall3
+    100058: Innerwall4
+    100060: Innerwall5
+    100062: left1
+    100064: left1 1
+    100066: left1 2
+    100068: left1 3
+    100070: left1 4
+    100072: left1 5
+    100074: left1 6
+    100076: //RootNode
+    100078: Outerwall1
+    100080: Outerwall10
+    100082: Outerwall11
+    100084: Outerwall12
+    100086: Outerwall2
+    100088: Outerwall3
+    100090: Outerwall4
+    100092: Outerwall5
+    100094: Outerwall6
+    100096: Outerwall7
+    100098: Outerwall8
+    100100: Outerwall9
+    100102: pc:left1
+    100104: Pod:button1
+    100106: Pod:button2
+    100108: Pod:Handle
+    100110: Pod:Pod
+    100112: Pod:PodDoor1
+    100114: Pod:pSphere1
+    100116: Work_Station
+    100118: Innerwall6
+    100120: Innerwall7
+    100122: Crank
+    100124: crank:base
+    100126: crank:pCylinder1
+    100128: Basement_Level
+    100130: Lamp1
+    100132: Lamp:pCone3
+    100134: Lamp:pCube1
+    100136: Lamp:pCylinder1
+    100138: Lamp:pSphere1
+    400000: Ceiling
+    400002: Computing_Unit
+    400004: Computing_Unit1
+    400006: Computing_Unit2
+    400008: Computing_Unit3
+    400010: Computing_Unit4
+    400012: Computing_Unit5
+    400014: Computing_Unit6
+    400016: Computing_Unit7
+    400018: Computing_Unit_Set1
+    400020: Computing_Unit_Set2
+    400022: Core
+    400024: Core 1
+    400026: Core 2
+    400028: Core 3
+    400030: Core 4
+    400032: Core 5
+    400034: Core 6
+    400036: Floor
+    400038: Glove_Holder
+    400040: glove_holder_bad:pCube1
+    400042: glove_holder_bad:pCube2
+    400044: glove_holder_bad:pCube3
+    400046: glove_holder_bad:pCube4
+    400048: glove_holder_bad:pCube5
+    400050: Hibernation_Pod
+    400052: Innerwall1
+    400054: Innerwall2
+    400056: Innerwall3
+    400058: Innerwall4
+    400060: Innerwall5
+    400062: left1
+    400064: left1 1
+    400066: left1 2
+    400068: left1 3
+    400070: left1 4
+    400072: left1 5
+    400074: left1 6
+    400076: //RootNode
+    400078: Outerwall1
+    400080: Outerwall10
+    400082: Outerwall11
+    400084: Outerwall12
+    400086: Outerwall2
+    400088: Outerwall3
+    400090: Outerwall4
+    400092: Outerwall5
+    400094: Outerwall6
+    400096: Outerwall7
+    400098: Outerwall8
+    400100: Outerwall9
+    400102: pc:left1
+    400104: Pod:button1
+    400106: Pod:button2
+    400108: Pod:Handle
+    400110: Pod:Pod
+    400112: Pod:PodDoor1
+    400114: Pod:pSphere1
+    400116: Work_Station
+    400118: Innerwall6
+    400120: Innerwall7
+    400122: Crank
+    400124: crank:base
+    400126: crank:pCylinder1
+    400128: Basement_Level
+    400130: Lamp1
+    400132: Lamp:pCone3
+    400134: Lamp:pCube1
+    400136: Lamp:pCylinder1
+    400138: Lamp:pSphere1
+    2000000: left1
+    2000002: left1 1
+    2000004: left1 2
+    2000006: left1 3
+    2000008: left1 4
+    2000010: left1 5
+    2000012: left1 6
+    2000014: pc:left1
+    2100000: lambert1
+    2300000: Ceiling
+    2300002: Computing_Unit_Set1
+    2300004: Computing_Unit_Set2
+    2300006: Floor
+    2300008: glove_holder_bad:pCube1
+    2300010: glove_holder_bad:pCube2
+    2300012: glove_holder_bad:pCube3
+    2300014: glove_holder_bad:pCube4
+    2300016: glove_holder_bad:pCube5
+    2300018: Innerwall1
+    2300020: Innerwall2
+    2300022: Innerwall3
+    2300024: Innerwall4
+    2300026: Innerwall5
+    2300028: Outerwall1
+    2300030: Outerwall10
+    2300032: Outerwall11
+    2300034: Outerwall12
+    2300036: Outerwall2
+    2300038: Outerwall3
+    2300040: Outerwall4
+    2300042: Outerwall5
+    2300044: Outerwall6
+    2300046: Outerwall7
+    2300048: Outerwall8
+    2300050: Outerwall9
+    2300052: Pod:button1
+    2300054: Pod:button2
+    2300056: Pod:Handle
+    2300058: Pod:Pod
+    2300060: Pod:PodDoor1
+    2300062: Work_Station
+    2300064: Innerwall6
+    2300066: Innerwall7
+    2300068: crank:base
+    2300070: crank:pCylinder1
+    2300072: Lamp:pCone3
+    2300074: Lamp:pCube1
+    2300076: Lamp:pCylinder1
+    2300078: Lamp:pSphere1
+    3300000: Ceiling
+    3300002: Computing_Unit_Set1
+    3300004: Computing_Unit_Set2
+    3300006: Floor
+    3300008: glove_holder_bad:pCube1
+    3300010: glove_holder_bad:pCube2
+    3300012: glove_holder_bad:pCube3
+    3300014: glove_holder_bad:pCube4
+    3300016: glove_holder_bad:pCube5
+    3300018: Innerwall1
+    3300020: Innerwall2
+    3300022: Innerwall3
+    3300024: Innerwall4
+    3300026: Innerwall5
+    3300028: Outerwall1
+    3300030: Outerwall10
+    3300032: Outerwall11
+    3300034: Outerwall12
+    3300036: Outerwall2
+    3300038: Outerwall3
+    3300040: Outerwall4
+    3300042: Outerwall5
+    3300044: Outerwall6
+    3300046: Outerwall7
+    3300048: Outerwall8
+    3300050: Outerwall9
+    3300052: Pod:button1
+    3300054: Pod:button2
+    3300056: Pod:Handle
+    3300058: Pod:Pod
+    3300060: Pod:PodDoor1
+    3300062: Work_Station
+    3300064: Innerwall6
+    3300066: Innerwall7
+    3300068: crank:base
+    3300070: crank:pCylinder1
+    3300072: Lamp:pCone3
+    3300074: Lamp:pCube1
+    3300076: Lamp:pCylinder1
+    3300078: Lamp:pSphere1
+    4300000: Outerwall1
+    4300002: Outerwall2
+    4300004: Outerwall3
+    4300006: Outerwall4
+    4300008: Outerwall5
+    4300010: Outerwall6
+    4300012: Outerwall7
+    4300014: Outerwall8
+    4300016: Outerwall9
+    4300018: Outerwall10
+    4300020: Outerwall11
+    4300022: Outerwall12
+    4300024: Floor
+    4300026: Ceiling
+    4300028: Innerwall1
+    4300030: Innerwall2
+    4300032: Innerwall3
+    4300034: Innerwall4
+    4300036: Innerwall5
+    4300038: Work_Station
+    4300040: Computing_Unit_Set1
+    4300042: Computing_Unit_Set2
+    4300044: Pod:Pod
+    4300046: Pod:Handle
+    4300048: Pod:button1
+    4300050: Pod:button2
+    4300052: Pod:PodDoor1
+    4300054: glove_holder_bad:pCube1
+    4300056: glove_holder_bad:pCube2
+    4300058: glove_holder_bad:pCube3
+    4300060: glove_holder_bad:pCube4
+    4300062: glove_holder_bad:pCube5
+    4300064: Innerwall6
+    4300066: Innerwall7
+    4300068: crank:base
+    4300070: crank:pCylinder1
+    4300072: Lamp:pCube1
+    4300074: Lamp:pCylinder1
+    4300076: Lamp:pCone3
+    4300078: Lamp:pSphere1
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

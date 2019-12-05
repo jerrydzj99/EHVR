@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: Master_Model.ma
-//Last modified: Thu, Dec 05, 2019 02:09:37 PM
+//Last modified: Thu, Dec 05, 2019 02:07:20 PM
 //Codeset: UTF-8
 requires maya "2019";
 requires "mtoa" "3.1.2";
@@ -14,13 +14,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "39F83826-2847-4A59-0F93-EAB9055AE16D";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -2.091252843817887 5.2390516648032976 -3.6108051557369505 ;
-	setAttr ".r" -type "double3" -21.938352740786051 -454.1999999998074 -7.6333312355124402e-14 ;
+	setAttr ".t" -type "double3" 1.9133122530344071 2.2204067941827117 -2.1599339881346102 ;
+	setAttr ".r" -type "double3" -28.538352740790181 -389.7999999998346 9.1630597562693422e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "96F8F111-E24C-325A-187F-BBB6D17C140F";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 6.2486523395057958;
+	setAttr ".coi" 1.3778919946707502;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -62,7 +62,7 @@ createNode camera -s -n "frontShape" -p "front";
 createNode transform -s -n "side";
 	rename -uid "147F4222-AF4D-8C8E-6836-9A9C25198A9C";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 1000.1020565989571 2.3497886956147802 -6.2303568160658562 ;
+	setAttr ".t" -type "double3" 1000.1020565989571 2.2397075161868614 1.4753257438884775 ;
 	setAttr ".r" -type "double3" 0 89.999999999999986 0 ;
 createNode camera -s -n "sideShape" -p "side";
 	rename -uid "2AD71698-D14C-5DBF-2F2D-DA8ED1CA8852";
@@ -312,7 +312,7 @@ createNode mesh -n "OuterwallShape5" -p "Outerwall5";
 createNode transform -n "Outerwall6" -p "Basement_Level";
 	rename -uid "3428E3CB-AE49-2985-1435-E5B03F38450B";
 	setAttr ".t" -type "double3" 6.3113357888689672 -2.2204460492503131e-15 -3.418046891180281 ;
-	setAttr ".r" -type "double3" 0 -195.04452437410851 0 ;
+	setAttr ".r" -type "double3" 0.096287847887196881 -195.04452437410851 -0.24494902292394902 ;
 	setAttr ".s" -type "double3" 12.562677981997084 3 0.2 ;
 	setAttr ".rp" -type "double3" -0.0011261861136510141 -0.27274230122566223 0.00076102018356323075 ;
 	setAttr ".rpt" -type "double3" 0.0011263043570351806 -3.3867782677445724e-06 -0.00076098748429286251 ;
@@ -738,6 +738,7 @@ createNode mesh -n "FloorShape" -p "Floor";
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "Ceiling" -p "Basement_Level";
 	rename -uid "080B58AB-814A-48A9-A89E-10B1BA9D3B24";
+	setAttr ".v" no;
 	setAttr ".t" -type "double3" 6.9998425547162828 0.96403195678665332 -0.16748912749801409 ;
 	setAttr ".s" -type "double3" 14.770835995754283 0.2 10.907536462571812 ;
 createNode mesh -n "CeilingShape" -p "Ceiling";
