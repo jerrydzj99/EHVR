@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Grab : MonoBehaviour
 {
+    public GameObject handStateMachine;
+    public HandState handState;
     public OVRInput.Controller controller;
     public GameObject player;
 
     private float gripState;
-    private bool grabbing;
     private Vector3 handVelocity;
 
     private GameObject grabbedObject;
@@ -18,7 +19,8 @@ public class Grab : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        grabbing = false;
+        handState = handStateMachine.GetComponent<HandState>();
+        handState.isGrabbing = false;
         grabVibrationInProgress = false;
     }
 
@@ -28,7 +30,7 @@ public class Grab : MonoBehaviour
         gripState = OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger, controller);
         handVelocity = OVRInput.GetLocalControllerVelocity(controller);
 
-        if (grabbing)
+        if (handState.isGrabbing)
         {
             if (Time.time - timeOfGrabbing >= 0.1f && grabVibrationInProgress)
             {
@@ -44,15 +46,21 @@ public class Grab : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.CompareTag("Grabbable") && !grabbing && gripState >= 0.9f)
+        if (other.gameObject.CompareTag("Grabbable") && !handState.isGrabbing && gripState >= 0.9f)
         {
-            GrabObject(other.gameObject);
+            if (other.gameObject.name == "Crank" && handState.isDrawing)
+            {
+
+            } else
+            {
+                GrabObject(other.gameObject);
+            }
         }
     }
 
     private void GrabObject(GameObject obj)
     {
-        grabbing = true;
+        handState.isGrabbing = true;
         grabbedObject = obj;
         grabbedObject.transform.parent = transform;
         Rigidbody rb = grabbedObject.GetComponent<Rigidbody>();
@@ -62,9 +70,9 @@ public class Grab : MonoBehaviour
         StartGrabVibration();
     }
 
-    private void Release()
+    public void Release()
     {
-        grabbing = false;
+        handState.isGrabbing = false;
         grabbedObject.transform.parent = null;
         Rigidbody rb = grabbedObject.GetComponent<Rigidbody>();
         CapsuleCollider cc = grabbedObject.GetComponent<CapsuleCollider>();
