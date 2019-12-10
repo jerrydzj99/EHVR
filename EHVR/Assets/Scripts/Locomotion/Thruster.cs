@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Thruster : MonoBehaviour
 {
+    public GameObject leftThruster;
+    public GameObject rightThruster;
     public int turnAngle;
     public float maxVelocity;
     public float breakSpeed;
@@ -21,6 +23,7 @@ public class Thruster : MonoBehaviour
 
         if (OVRInput.Get(OVRInput.Button.Two))
         {
+            playThrusterSound(rightThruster);
             thrusterForward(rightHand);
         }
 
@@ -31,6 +34,7 @@ public class Thruster : MonoBehaviour
 
         if (OVRInput.Get(OVRInput.Button.Four))
         {
+            playThrusterSound(leftThruster);
             thrusterForward(leftHand);
         }
 
@@ -64,6 +68,11 @@ public class Thruster : MonoBehaviour
     private void rotatePlayer(int direction)
     {
         //gameObject.GetComponent<Transform>().Rotate(new Vector3(0, direction * turnAngle, 0));
+    }
+
+    private void playThrusterSound(GameObject thruster)
+    {
+        thruster.GetComponent<AudioSource>().Play();
     }
 
 }
