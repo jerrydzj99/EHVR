@@ -12,6 +12,7 @@ public class Draw : MonoBehaviour
     private Vector3 handVelocity;
 
     private GameObject drawer;
+    private Transform handleTransform;
     private Vector3 originalHandPosition;
     private Vector3 originalDrawerPosition;
     private Vector3 originalDrawerLocalPosition;
@@ -45,10 +46,12 @@ public class Draw : MonoBehaviour
                 Release();
             }
 
-            offset = gameObject.GetComponent<Transform>().position - originalHandPosition;
-            drawer.transform.position = originalDrawerPosition + offset;
-            drawer.transform.localPosition = new Vector3(drawer.transform.localPosition.x,
-                originalDrawerLocalPosition.y, originalDrawerLocalPosition.z);
+            handleTransform = drawer.transform.GetChild(0);
+            offset = Vector3.Dot(gameObject.GetComponent<Transform>().position - handleTransform.position, drawer.transform.right) * drawer.transform.right;
+            //drawer.transform.position = originalDrawerPosition + offset;
+            //drawer.transform.localPosition = new Vector3(drawer.transform.localPosition.x,
+                //originalDrawerLocalPosition.y, originalDrawerLocalPosition.z);
+            drawer.transform.Translate(offset / 30f, Space.World);
 
         }
     }
