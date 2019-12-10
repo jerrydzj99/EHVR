@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Draw : MonoBehaviour
 {
+    public GameObject handStateMachine;
+    public HandState handState;
     public OVRInput.Controller controller;
     public GameObject player;
 
     private float gripState;
-    private bool drawing;
     private Vector3 handVelocity;
 
     private GameObject drawer;
@@ -24,7 +25,7 @@ public class Draw : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        drawing = false;
+        handState = handStateMachine.GetComponent<HandState>();
         drawVibrationInProgress = false;
     }
 
@@ -34,7 +35,7 @@ public class Draw : MonoBehaviour
         gripState = OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger, controller);
         handVelocity = OVRInput.GetLocalControllerVelocity(controller);
 
-        if (drawing)
+        if (handState.isDrawing)
         {
             if (Time.time - timeOfDrawing >= 0.1f && drawVibrationInProgress)
             {
@@ -58,7 +59,7 @@ public class Draw : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.CompareTag("Drawer") && !drawing && gripState >= 0.9f)
+        if (other.gameObject.CompareTag("Drawer") && !handState.isDrawing && gripState >= 0.9f)
         {
             DrawObject(other.gameObject);
         }
@@ -66,7 +67,8 @@ public class Draw : MonoBehaviour
 
     private void DrawObject(GameObject obj)
     {
-        drawing = true;
+        handState.GrabReleaseIfGrabbing();
+        handState.isDrawing = true;
         drawer = obj;
 
         //Rigidbody rb = drawer.GetComponent<Rigidbody>();
@@ -83,7 +85,7 @@ public class Draw : MonoBehaviour
 
     private void Release()
     {
-        drawing = false;
+        handState.isDrawing = false;
 
         //Rigidbody rb = drawer.GetComponent<Rigidbody>();
         //CapsuleCollider cc = drawer.GetComponent<CapsuleCollider>();
