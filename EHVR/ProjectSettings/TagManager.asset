@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Anchor
   - Grabbable
+  - Drawer
+  - Shell
   layers:
   - Default
   - TransparentFX

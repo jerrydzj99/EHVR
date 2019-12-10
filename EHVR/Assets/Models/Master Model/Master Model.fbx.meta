@@ -73,6 +73,48 @@ ModelImporter:
     100134: Lamp:pCube1
     100136: Lamp:pCylinder1
     100138: Lamp:pSphere1
+    100140: Boxes
+    100142: NEW_Cupboard:Boxes
+    100144: NEW_Cupboard:Drawer1
+    100146: NEW_Cupboard:Drawer10
+    100148: NEW_Cupboard:Drawer2
+    100150: NEW_Cupboard:Drawer3
+    100152: NEW_Cupboard:Drawer4
+    100154: NEW_Cupboard:Drawer5
+    100156: NEW_Cupboard:Drawer6
+    100158: NEW_Cupboard:Drawer7
+    100160: NEW_Cupboard:Drawer8
+    100162: NEW_Cupboard:Drawer9
+    100164: NEW_Cupboard:pCube7
+    100166: NEW_Cupboard:pCube7 1
+    100168: NEW_Cupboard:pCube7 2
+    100170: NEW_Cupboard:pCube7 3
+    100172: NEW_Cupboard:pCube7 4
+    100174: NEW_Cupboard:pCube7 5
+    100176: NEW_Cupboard:pCube7 6
+    100178: NEW_Cupboard:pCube7 7
+    100180: NEW_Cupboard:pCube7 8
+    100182: NEW_Cupboard:pCube7 9
+    100184: NEW_Cupboard:polySurface5
+    100186: NEW_Cupboard:polySurface5 1
+    100188: NEW_Cupboard:polySurface5 2
+    100190: NEW_Cupboard:polySurface5 3
+    100192: NEW_Cupboard:polySurface5 4
+    100194: NEW_Cupboard:polySurface5 5
+    100196: NEW_Cupboard:polySurface5 6
+    100198: NEW_Cupboard:polySurface5 7
+    100200: NEW_Cupboard:polySurface5 8
+    100202: NEW_Cupboard:polySurface5 9
+    100204: NEW_Cupboard:polySurface6
+    100206: NEW_Cupboard:polySurface6 1
+    100208: NEW_Cupboard:polySurface6 2
+    100210: NEW_Cupboard:polySurface6 3
+    100212: NEW_Cupboard:polySurface6 4
+    100214: NEW_Cupboard:polySurface6 5
+    100216: NEW_Cupboard:polySurface6 6
+    100218: NEW_Cupboard:polySurface6 7
+    100220: NEW_Cupboard:polySurface6 8
+    100222: NEW_Cupboard:polySurface6 9
     400000: Ceiling
     400002: Computing_Unit
     400004: Computing_Unit1
@@ -143,6 +185,48 @@ ModelImporter:
     400134: Lamp:pCube1
     400136: Lamp:pCylinder1
     400138: Lamp:pSphere1
+    400140: Boxes
+    400142: NEW_Cupboard:Boxes
+    400144: NEW_Cupboard:Drawer1
+    400146: NEW_Cupboard:Drawer10
+    400148: NEW_Cupboard:Drawer2
+    400150: NEW_Cupboard:Drawer3
+    400152: NEW_Cupboard:Drawer4
+    400154: NEW_Cupboard:Drawer5
+    400156: NEW_Cupboard:Drawer6
+    400158: NEW_Cupboard:Drawer7
+    400160: NEW_Cupboard:Drawer8
+    400162: NEW_Cupboard:Drawer9
+    400164: NEW_Cupboard:pCube7
+    400166: NEW_Cupboard:pCube7 1
+    400168: NEW_Cupboard:pCube7 2
+    400170: NEW_Cupboard:pCube7 3
+    400172: NEW_Cupboard:pCube7 4
+    400174: NEW_Cupboard:pCube7 5
+    400176: NEW_Cupboard:pCube7 6
+    400178: NEW_Cupboard:pCube7 7
+    400180: NEW_Cupboard:pCube7 8
+    400182: NEW_Cupboard:pCube7 9
+    400184: NEW_Cupboard:polySurface5
+    400186: NEW_Cupboard:polySurface5 1
+    400188: NEW_Cupboard:polySurface5 2
+    400190: NEW_Cupboard:polySurface5 3
+    400192: NEW_Cupboard:polySurface5 4
+    400194: NEW_Cupboard:polySurface5 5
+    400196: NEW_Cupboard:polySurface5 6
+    400198: NEW_Cupboard:polySurface5 7
+    400200: NEW_Cupboard:polySurface5 8
+    400202: NEW_Cupboard:polySurface5 9
+    400204: NEW_Cupboard:polySurface6
+    400206: NEW_Cupboard:polySurface6 1
+    400208: NEW_Cupboard:polySurface6 2
+    400210: NEW_Cupboard:polySurface6 3
+    400212: NEW_Cupboard:polySurface6 4
+    400214: NEW_Cupboard:polySurface6 5
+    400216: NEW_Cupboard:polySurface6 6
+    400218: NEW_Cupboard:polySurface6 7
+    400220: NEW_Cupboard:polySurface6 8
+    400222: NEW_Cupboard:polySurface6 9
     2000000: left1
     2000002: left1 1
     2000004: left1 2
@@ -192,6 +276,36 @@ ModelImporter:
     2300074: Lamp:pCube1
     2300076: Lamp:pCylinder1
     2300078: Lamp:pSphere1
+    2300080: NEW_Cupboard:pCube7
+    2300082: NEW_Cupboard:pCube7 1
+    2300084: NEW_Cupboard:pCube7 2
+    2300086: NEW_Cupboard:pCube7 3
+    2300088: NEW_Cupboard:pCube7 4
+    2300090: NEW_Cupboard:pCube7 5
+    2300092: NEW_Cupboard:pCube7 6
+    2300094: NEW_Cupboard:pCube7 7
+    2300096: NEW_Cupboard:pCube7 8
+    2300098: NEW_Cupboard:pCube7 9
+    2300100: NEW_Cupboard:polySurface5
+    2300102: NEW_Cupboard:polySurface5 1
+    2300104: NEW_Cupboard:polySurface5 2
+    2300106: NEW_Cupboard:polySurface5 3
+    2300108: NEW_Cupboard:polySurface5 4
+    2300110: NEW_Cupboard:polySurface5 5
+    2300112: NEW_Cupboard:polySurface5 6
+    2300114: NEW_Cupboard:polySurface5 7
+    2300116: NEW_Cupboard:polySurface5 8
+    2300118: NEW_Cupboard:polySurface5 9
+    2300120: NEW_Cupboard:polySurface6
+    2300122: NEW_Cupboard:polySurface6 1
+    2300124: NEW_Cupboard:polySurface6 2
+    2300126: NEW_Cupboard:polySurface6 3
+    2300128: NEW_Cupboard:polySurface6 4
+    2300130: NEW_Cupboard:polySurface6 5
+    2300132: NEW_Cupboard:polySurface6 6
+    2300134: NEW_Cupboard:polySurface6 7
+    2300136: NEW_Cupboard:polySurface6 8
+    2300138: NEW_Cupboard:polySurface6 9
     3300000: Ceiling
     3300002: Computing_Unit_Set1
     3300004: Computing_Unit_Set2
@@ -232,6 +346,36 @@ ModelImporter:
     3300074: Lamp:pCube1
     3300076: Lamp:pCylinder1
     3300078: Lamp:pSphere1
+    3300080: NEW_Cupboard:pCube7
+    3300082: NEW_Cupboard:pCube7 1
+    3300084: NEW_Cupboard:pCube7 2
+    3300086: NEW_Cupboard:pCube7 3
+    3300088: NEW_Cupboard:pCube7 4
+    3300090: NEW_Cupboard:pCube7 5
+    3300092: NEW_Cupboard:pCube7 6
+    3300094: NEW_Cupboard:pCube7 7
+    3300096: NEW_Cupboard:pCube7 8
+    3300098: NEW_Cupboard:pCube7 9
+    3300100: NEW_Cupboard:polySurface5
+    3300102: NEW_Cupboard:polySurface5 1
+    3300104: NEW_Cupboard:polySurface5 2
+    3300106: NEW_Cupboard:polySurface5 3
+    3300108: NEW_Cupboard:polySurface5 4
+    3300110: NEW_Cupboard:polySurface5 5
+    3300112: NEW_Cupboard:polySurface5 6
+    3300114: NEW_Cupboard:polySurface5 7
+    3300116: NEW_Cupboard:polySurface5 8
+    3300118: NEW_Cupboard:polySurface5 9
+    3300120: NEW_Cupboard:polySurface6
+    3300122: NEW_Cupboard:polySurface6 1
+    3300124: NEW_Cupboard:polySurface6 2
+    3300126: NEW_Cupboard:polySurface6 3
+    3300128: NEW_Cupboard:polySurface6 4
+    3300130: NEW_Cupboard:polySurface6 5
+    3300132: NEW_Cupboard:polySurface6 6
+    3300134: NEW_Cupboard:polySurface6 7
+    3300136: NEW_Cupboard:polySurface6 8
+    3300138: NEW_Cupboard:polySurface6 9
     4300000: Outerwall1
     4300002: Outerwall2
     4300004: Outerwall3
@@ -272,6 +416,36 @@ ModelImporter:
     4300074: Lamp:pCylinder1
     4300076: Lamp:pCone3
     4300078: Lamp:pSphere1
+    4300080: NEW_Cupboard:polySurface5
+    4300082: NEW_Cupboard:polySurface6
+    4300084: NEW_Cupboard:pCube7
+    4300086: NEW_Cupboard:polySurface5
+    4300088: NEW_Cupboard:polySurface6
+    4300090: NEW_Cupboard:pCube7
+    4300092: NEW_Cupboard:polySurface5
+    4300094: NEW_Cupboard:polySurface6
+    4300096: NEW_Cupboard:pCube7
+    4300098: NEW_Cupboard:polySurface5
+    4300100: NEW_Cupboard:polySurface6
+    4300102: NEW_Cupboard:pCube7
+    4300104: NEW_Cupboard:polySurface5
+    4300106: NEW_Cupboard:polySurface6
+    4300108: NEW_Cupboard:pCube7
+    4300110: NEW_Cupboard:polySurface5
+    4300112: NEW_Cupboard:polySurface6
+    4300114: NEW_Cupboard:pCube7
+    4300116: NEW_Cupboard:polySurface5
+    4300118: NEW_Cupboard:polySurface6
+    4300120: NEW_Cupboard:pCube7
+    4300122: NEW_Cupboard:polySurface5
+    4300124: NEW_Cupboard:polySurface6
+    4300126: NEW_Cupboard:pCube7
+    4300128: NEW_Cupboard:polySurface5
+    4300130: NEW_Cupboard:polySurface6
+    4300132: NEW_Cupboard:pCube7
+    4300134: NEW_Cupboard:polySurface5
+    4300136: NEW_Cupboard:polySurface6
+    4300138: NEW_Cupboard:pCube7
   externalObjects: {}
   materials:
     importMaterials: 1
