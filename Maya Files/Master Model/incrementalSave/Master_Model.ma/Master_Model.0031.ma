@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: Master_Model.ma
-//Last modified: Tue, Dec 10, 2019 12:17:50 PM
+//Last modified: Tue, Dec 10, 2019 12:17:31 PM
 //Codeset: UTF-8
 requires maya "2019";
 requires "mtoa" "3.1.2";
@@ -38493,6 +38493,7 @@ createNode mesh -n "glove_holder_bad:pCubeShape5" -p "glove_holder_bad:pCube5";
 	setAttr ".dsm" 2;
 createNode transform -n "Innerwall7" -p "Basement_Level";
 	rename -uid "9BAF6ADC-D748-C703-2677-AF870B049A9A";
+	setAttr ".v" no;
 	setAttr ".t" -type "double3" 6.1932867132688862 -0.00040726180760540672 -0.68468160614045492 ;
 	setAttr ".r" -type "double3" 0 -195.045 0 ;
 	setAttr ".s" -type "double3" 12.562677981997084 3 0.2 ;
