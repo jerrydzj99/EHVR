@@ -51,7 +51,7 @@ public class Draw : MonoBehaviour
             //drawer.transform.position = originalDrawerPosition + offset;
             //drawer.transform.localPosition = new Vector3(drawer.transform.localPosition.x,
                 //originalDrawerLocalPosition.y, originalDrawerLocalPosition.z);
-            drawer.transform.Translate(offset / 30f, Space.World);
+            drawer.transform.Translate(offset / 20f, Space.World);
 
         }
     }
