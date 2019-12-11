@@ -115,6 +115,20 @@ ModelImporter:
     100218: NEW_Cupboard:polySurface6 7
     100220: NEW_Cupboard:polySurface6 8
     100222: NEW_Cupboard:polySurface6 9
+    100224: Bed
+    100226: Crank_Box_Cover
+    100228: Crank_Box_Shell
+    100230: CrankBox
+    100232: Desk_Lamp
+    100234: flat_bed:Bed_Back
+    100236: flat_bed:Bed_Base
+    100238: flat_bed:Blanket
+    100240: flat_bed:Pillow
+    100242: Pod1:button1
+    100244: Pod1:button2
+    100246: Pod1:Handle
+    100248: Pod_Door
+    100250: Pod_Shell
     400000: Ceiling
     400002: Computing_Unit
     400004: Computing_Unit1
@@ -227,6 +241,20 @@ ModelImporter:
     400218: NEW_Cupboard:polySurface6 7
     400220: NEW_Cupboard:polySurface6 8
     400222: NEW_Cupboard:polySurface6 9
+    400224: Bed
+    400226: Crank_Box_Cover
+    400228: Crank_Box_Shell
+    400230: CrankBox
+    400232: Desk_Lamp
+    400234: flat_bed:Bed_Back
+    400236: flat_bed:Bed_Base
+    400238: flat_bed:Blanket
+    400240: flat_bed:Pillow
+    400242: Pod1:button1
+    400244: Pod1:button2
+    400246: Pod1:Handle
+    400248: Pod_Door
+    400250: Pod_Shell
     2000000: left1
     2000002: left1 1
     2000004: left1 2
@@ -306,6 +334,17 @@ ModelImporter:
     2300134: NEW_Cupboard:polySurface6 7
     2300136: NEW_Cupboard:polySurface6 8
     2300138: NEW_Cupboard:polySurface6 9
+    2300140: Crank_Box_Cover
+    2300142: Crank_Box_Shell
+    2300144: flat_bed:Bed_Back
+    2300146: flat_bed:Bed_Base
+    2300148: flat_bed:Blanket
+    2300150: flat_bed:Pillow
+    2300152: Pod1:button1
+    2300154: Pod1:button2
+    2300156: Pod1:Handle
+    2300158: Pod_Door
+    2300160: Pod_Shell
     3300000: Ceiling
     3300002: Computing_Unit_Set1
     3300004: Computing_Unit_Set2
@@ -376,6 +415,17 @@ ModelImporter:
     3300134: NEW_Cupboard:polySurface6 7
     3300136: NEW_Cupboard:polySurface6 8
     3300138: NEW_Cupboard:polySurface6 9
+    3300140: Crank_Box_Cover
+    3300142: Crank_Box_Shell
+    3300144: flat_bed:Bed_Back
+    3300146: flat_bed:Bed_Base
+    3300148: flat_bed:Blanket
+    3300150: flat_bed:Pillow
+    3300152: Pod1:button1
+    3300154: Pod1:button2
+    3300156: Pod1:Handle
+    3300158: Pod_Door
+    3300160: Pod_Shell
     4300000: Outerwall1
     4300002: Outerwall2
     4300004: Outerwall3
@@ -446,6 +496,17 @@ ModelImporter:
     4300134: NEW_Cupboard:polySurface5
     4300136: NEW_Cupboard:polySurface6
     4300138: NEW_Cupboard:pCube7
+    4300140: Pod_Door
+    4300142: Pod1:Handle
+    4300144: Pod1:button1
+    4300146: Pod1:button2
+    4300148: Pod_Shell
+    4300150: flat_bed:Bed_Base
+    4300152: flat_bed:Bed_Back
+    4300154: flat_bed:Pillow
+    4300156: flat_bed:Blanket
+    4300158: Crank_Box_Shell
+    4300160: Crank_Box_Cover
   externalObjects: {}
   materials:
     importMaterials: 1
