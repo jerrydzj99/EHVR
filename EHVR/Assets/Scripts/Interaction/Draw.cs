@@ -53,6 +53,14 @@ public class Draw : MonoBehaviour
             //drawer.transform.localPosition = new Vector3(drawer.transform.localPosition.x,
                 //originalDrawerLocalPosition.y, originalDrawerLocalPosition.z);
             drawer.transform.Translate(offset, Space.World);
+            if (Vector3.Magnitude(offset) > 0.002f)
+            {
+                OVRInput.SetControllerVibration(0.00001f, 1f, controller);
+            }
+            else
+            {
+                OVRInput.SetControllerVibration(0, 0, controller);
+            }
         }
     }
 
