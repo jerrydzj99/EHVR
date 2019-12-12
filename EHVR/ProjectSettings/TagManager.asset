@@ -7,7 +7,7 @@ TagManager:
   - Anchor
   - Grabbable
   - Drawer
-  - Shell
+  - CrankBoxCover
   layers:
   - Default
   - TransparentFX

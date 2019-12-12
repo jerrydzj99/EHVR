@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class GP : MonoBehaviour
 {
+    public GameObject handStateMachine;
+    public HandState handState;
     public OVRInput.Controller controller;
     public GameObject player;
     public GameObject hand;
 
     private float gripState;
-    private bool anchored;
     private Vector3 anchorPosition;
     private Vector3 handVelocity;
     private bool anchorVibrationInProgress;
@@ -20,7 +21,7 @@ public class GP : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        anchored = false;
+        handState = handStateMachine.GetComponent<HandState>();
         anchorVibrationInProgress = false;
         warningVibrationInProgress = false;
     }
@@ -32,7 +33,7 @@ public class GP : MonoBehaviour
         gripState = OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger, controller);
         handVelocity = OVRInput.GetLocalControllerVelocity(controller);
 
-        if (anchored)
+        if (handState.isAnchored)
         {
 
             hand.transform.position = anchorPosition;
@@ -64,7 +65,7 @@ public class GP : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.CompareTag("Anchor") && !anchored && gripState >= 0.9f)
+        if (other.gameObject.CompareTag("Anchor") && !handState.isAnchored && gripState >= 0.9f)
         {
             Anchor();
         }
@@ -72,14 +73,18 @@ public class GP : MonoBehaviour
 
     private void Anchor()
     {
-        anchored = true;
+        if (handState.isDrawing || handState.isGrabbing || handState.isOpening)
+        {
+            return;
+        }
+        handState.isAnchored = true;
         anchorPosition = transform.position;
         StartAnchorVibration();
     }
 
     private void Disanchor()
     {
-        anchored = false;
+        handState.isAnchored = false;
         EndAnchorVibration();
     }
 
