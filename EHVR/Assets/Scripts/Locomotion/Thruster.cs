@@ -23,8 +23,17 @@ public class Thruster : MonoBehaviour
 
         if (OVRInput.Get(OVRInput.Button.Two))
         {
-            playThrusterSound(rightThruster);
             thrusterForward(rightHand);
+        }
+
+        if (OVRInput.GetDown(OVRInput.Button.Two))
+        {
+            playThrusterSound(rightThruster);
+        }
+
+        if (OVRInput.GetUp(OVRInput.Button.Two))
+        {
+            stopThrusterSound(rightThruster);
         }
 
         if (OVRInput.Get(OVRInput.Button.Three))
@@ -34,8 +43,17 @@ public class Thruster : MonoBehaviour
 
         if (OVRInput.Get(OVRInput.Button.Four))
         {
-            playThrusterSound(leftThruster);
             thrusterForward(leftHand);
+        }
+
+        if (OVRInput.GetDown(OVRInput.Button.Four))
+        {
+            playThrusterSound(leftThruster);
+        }
+
+        if (OVRInput.GetUp(OVRInput.Button.Four))
+        {
+            stopThrusterSound(leftThruster);
         }
 
         if (OVRInput.GetDown(OVRInput.Button.PrimaryThumbstickLeft))
@@ -72,7 +90,13 @@ public class Thruster : MonoBehaviour
 
     private void playThrusterSound(GameObject thruster)
     {
+        thruster.GetComponent<AudioSource>().loop = true;
         thruster.GetComponent<AudioSource>().Play();
+    }
+
+    private void stopThrusterSound(GameObject thruster)
+    {
+        thruster.GetComponent<AudioSource>().loop = false;
     }
 
 }

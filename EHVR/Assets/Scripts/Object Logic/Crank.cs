@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Crank : MonoBehaviour
 {
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,5 +17,19 @@ public class Crank : MonoBehaviour
         
     }
 
-    
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("CrankSlot"))
+        {
+            SnapOnto(other.gameObject);
+        }
+    }
+
+    private void SnapOnto(GameObject slot)
+    {
+        gameObject.tag = "CrankInSlot";
+        transform.parent = slot.transform;
+        transform.localPosition = slot.transform.localPosition;
+        transform.localRotation = new Quaternion(slot.transform.localRotation.x, slot.transform.localRotation.y + 90f, slot.transform.localRotation.z + 90f, slot.transform.localRotation.w);
+    }
 }

@@ -34,7 +34,7 @@ public class OpenCrankBox : MonoBehaviour
         {
             Progress();
         }
-        if (other.gameObject.CompareTag("CrankBoxCover") && !handState.isDrawing && !handState.isGrabbing)
+        if (other.gameObject.CompareTag("CrankBoxCover") && gripState > 0.9f && !handState.isDrawing && !handState.isGrabbing)
         {
             crankBoxCover = other.gameObject.GetComponent<CrankBoxCover>();
             handState.isOpening = true;

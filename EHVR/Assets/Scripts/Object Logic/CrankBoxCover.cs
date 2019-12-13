@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CrankBoxCover : MonoBehaviour
 {
+    public GameObject slot;
     public float progress;
 
     private float endurance;
@@ -26,6 +27,7 @@ public class CrankBoxCover : MonoBehaviour
         if (progress > endurance)
         {
             gameObject.tag = "Grabbable";
+            slot.tag = "CrankSlot";
         }
         if (gameObject.tag == "CrankBoxCover")
         {

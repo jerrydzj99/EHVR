@@ -9,6 +9,7 @@ TagManager:
   - Drawer
   - CrankBoxCover
   - CrankSlot
+  - CrankInSlot
   layers:
   - Default
   - TransparentFX
