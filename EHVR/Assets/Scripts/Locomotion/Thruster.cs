@@ -69,7 +69,7 @@ public class Thruster : MonoBehaviour
     private void thrusterForward(GameObject hand)
     {
 
-        Vector3 direction = hand.GetComponent<Transform>().localPosition - centerEyeAnchor.GetComponent<Transform>().localPosition;
+        Vector3 direction = hand.GetComponent<Transform>().localPosition - (centerEyeAnchor.GetComponent<Transform>().localPosition - new Vector3(0f, 0.1f, 0f));
         gameObject.GetComponent<Rigidbody>().AddForce(direction.normalized, ForceMode.Acceleration);
 
         if (gameObject.GetComponent<Rigidbody>().velocity.magnitude > maxVelocity)

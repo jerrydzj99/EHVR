@@ -59,6 +59,17 @@ public class EventManager : MonoBehaviour
         }
         else if (Time.time > 18f && stage == 5)
         {
+            stage++;
+            PlayVoiceClip(hypersleep);
+        }
+        else if (Time.time > 25.5f && stage == 6)
+        {
+            stage++;
+            PlayVoiceClip(upgradeThrusters);
+        }
+        /*
+        else if (Time.time > 18f && stage == 5)
+        {
             PlayVoiceClip(hypersleep);
             StartCoroutine(PlayerExitsPod());
         }
@@ -87,6 +98,7 @@ public class EventManager : MonoBehaviour
         {
             PlayVoiceClip(lookForCrank);
         }
+        */
     }
 
     private void PlayBeepingSound()
