@@ -5,6 +5,8 @@ using UnityEngine;
 public class Crank : MonoBehaviour
 {
 
+    public GameObject door;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,5 +33,6 @@ public class Crank : MonoBehaviour
         transform.parent = slot.transform;
         transform.localPosition = slot.transform.localPosition;
         transform.localRotation = new Quaternion(slot.transform.localRotation.x, slot.transform.localRotation.y + 90f, slot.transform.localRotation.z + 90f, slot.transform.localRotation.w);
+        door.GetComponent<Door>().unlocked = true;
     }
 }
